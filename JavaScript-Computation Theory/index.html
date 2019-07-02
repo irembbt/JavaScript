@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Regex to NFA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="madeBy.html">Made By</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+<div class="container">
+    <h1 class="text-center">Regex To Nfa</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <br>
+            <br>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-2"></div>
+                <div class="col md-4">
+                    <label for="regex">Your Regex</label>
+                    <div class="form-group">
+                        <input id="regex" class="form-control" type="text" placeholder="Write Your Regex">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="string">Your String</label>
+                    <div class="form-group">
+                        <input id="string" class="form-control" type="text" placeholder="Write Your String">
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <button id="confirmButton" class="btn btn-success btn-block">Submit</button>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <br>
+            <h1 class="text-center">Output Area</h1>
+            <div class="alert alert-success" role="alert" id="success">
+                <strong id="successText"></strong>
+            </div>
+            <div class="alert alert-danger" role="alert" id="failure">
+                <strong id="failureText"></strong>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <br>
+            <h4 class="text-center">NFA TABLE</h4>
+            <br>
+            <br>
+            <table class="table" id="nfaTable">
+                <thead>
+                <tr>
+                    <th scope="col">State From</th>
+                    <th scope="col">Trans Symbol</th>
+                    <th scope="col">State To</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- Outer libraries for better ui -->
+<script src="lib/js/jquery-3.3.1.min.js"></script>
+<script src="lib/js/bootstrap.min.js"></script>
+<!-- /Outer libraries for better ui -->
+
+<!-- Main JS file that converts Regex to Nfa and also accepts input according to! -->
+
+
+<script src="main.js"></script>
+
+
+
+<!-- Script to run Nfa to Regex -->
+<script src="lib/js/script.js"></script>
+<!-- /Script to run Nfa to Regex -->
+
+</body>
+</html>
